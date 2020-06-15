@@ -49,6 +49,18 @@ const traverserFn = (traverseMatrix, len) => {
   }
   return data;
 };
+var sortA = [-6,10,1,2,-10,6]
+
+
+let sortedArray = sortA.sort(
+  (a,b) => {
+    console.log("a=>",a,"b=>",b)
+    return a < 0 ? -(a)-b : b  < 0 ? b+a : a-b
+  } 
+  
+)
+
+console.log(sortedArray)
 console.log(traverserFn(traverseMatrix, 4));
 console.log(countData[Object.keys(countData)[1]]);
 
